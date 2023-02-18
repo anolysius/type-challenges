@@ -1,0 +1,25 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "daily type challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anolysius/type-challenges.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anolysius/type-challenges/issues"
+  },
+  "homepage": "https://github.com/anolysius/type-challenges#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
