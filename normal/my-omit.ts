@@ -36,7 +36,6 @@ type MyOmit<T, K extends keyof T> = {
   [P in keyof T as MyAssertion<P, K>]: T[P];
 };
 
-const a: MyOmit<Todo, "description"> = "title";
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "../utils";
 
