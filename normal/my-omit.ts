@@ -31,8 +31,13 @@
 */
 
 /* _____________ Your Code Here _____________ */
+
 type MyAssertion<T, K> = T extends K ? never : T;
 type MyOmit<T, K extends keyof T> = {
+  [P in MyAssertion<keyof T, K>]: T[P];
+};
+
+type MySecondOmit<T, K extends keyof T> = {
   [P in keyof T as MyAssertion<P, K>]: T[P];
 };
 
@@ -41,7 +46,7 @@ import type { Equal, Expect } from "../utils";
 
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, "description">>>,
-  Expect<Equal<Expected2, MyOmit<Todo, "description" | "completed">>>
+  Expect<Equal<Expected2, MySecondOmit<Todo, "description" | "completed">>>
 ];
 
 // @ts-expect-error
