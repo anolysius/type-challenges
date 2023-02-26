@@ -1,6 +1,6 @@
 /*
-  PARK. 2023-02-19
-  
+  PARK. 2023-02-26
+
   10 - Tuple to Union
   -------
   by Anthony Fu (@antfu) #medium #infer #tuple #union
